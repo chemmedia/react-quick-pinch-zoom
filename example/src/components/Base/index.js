@@ -51,6 +51,7 @@ class Base extends Component {
         onZoomEnd={this.toggleWillChange}
         onDragEnd={this.toggleWillChange}
         onUpdate={this.onUpdate}
+        shouldCancelHandledTouchEndEvents={true}
       >
         <Child innerRef={this.innerRef} />
       </QuickPinchZoom>
